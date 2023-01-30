@@ -1,11 +1,7 @@
 <?php
 //課題1
-function double($max) {
-    $result = 0;
-    for($i = 1; $i <= $max; $i++){
-        $result = $i*2;
-    }
-    return $result;
+function double($a) {
+    echo $a = $a*2;
 }
 echo double(4);
 echo "\n";
@@ -19,7 +15,11 @@ echo "\n";
 
 //課題3
 function arr($arr) {
-    echo array_product($arr);
+    $result = 1;
+    foreach($arr as $a){
+        $result *= $a;
+    }
+    return $result;
 }
 echo arr(array(1,3,5,7,9));
 echo "\n";
